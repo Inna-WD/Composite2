@@ -1,0 +1,229 @@
+
+<!-- **---------------------- GENERAL DEFINITION OF THE PAGE----------------------** -->
+
+<head>
+    <title>FAQs</title>
+    <meta name="FAQs" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons/favicon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<header>
+        <!-- **---------------------- MENU (IDENTICAL FOR ALL PAGES) ----------------------** -->
+
+    <section class="header">
+        <a href="/"><img class="logo menu-items" src="/photos/logo.png" alt="Logo"></a>
+        <div></div>
+        <a href="Collections.html" class="menu-items">Collections</a>
+        <a href="shop.html" class="menu-items">Shop</a>
+        <a href="faqs.html" class="menu-items">FAQs</a>
+        <a href="Press.html" class="menu-items">Media</a>
+    </section>
+    <hr class="divider">
+
+</header>
+
+<body>
+    <!-- **---------------------- ACCORDION AND PANEL CLASSES WILL BE USED BY JS CLICK LISTENER ----------------------** -->
+
+    <h2>YouTube and Facebook</h2>
+    <hr class="divider-small">
+    <br>
+        <!-- **---------------------- YOUTUBE AND FACEBOOK ACCORDION----------------------** -->
+
+    <button class="accordion">What should I do if I have a copyright claim on Youtube or Facebook?</button>
+    <div class="panel">
+        <p>Visit this page to know more about YouTube Copyright Notices:
+            https://www.bensound.com/youtube-copyright-notices
+            Youtube & Facebook uses recognition software that scans the music in your video to see if you used
+            copyrighted material. We do not register our tracks in this system so if you have a claim it is whether a
+            "false positive" (the software is wrong) or that someone try to steal our music.</p>
+    </div>
+
+    <button class="accordion">Can I use your music for Facebook?</button>
+    <div class="panel">
+        <p> Yes you can use our music in your Facebook videos, however you cannot registered videos to the Facebook
+            Rights Manager Service. Because of a flaw of Facebook's copyright protection software that would keep other
+            users to use our music.</p>
+    </div>
+
+    <button class="accordion">Can I use your music for free?</button>
+    <div class="panel">
+        <p>Yes! But you need to credit us (Mention Bensound.com in your project) and respect the Free License Terms.
+            You can find the type of authorized projects here: Licensing Comparison Chart
+            If you do not want to credit Bensound.com or if you want to support this website you can buy a license on
+            the track pages (click on the track picture). </p>
+    </div>
+    <br>
+    <br>
+    <hr class="divider-small">
+    <br>
+    <h2>Licences and Subscriptions</h2>
+    <br>
+            <!-- **---------------------- LICENSE ACCORDION----------------------** -->
+
+    <hr class="divider-small">
+    <br>
+    <button class="accordion">Do I need to ask you the authorization to use your music?</button>
+    <div class="panel">
+        <p> No, as long as you credit Bensound.com and respect the license you don't need to ask me.
+        </p>
+    </div>
+    <button class="accordion">What is the proper way to give credits?</button>
+    <div class="panel">
+        <p> Examples of credits: "Music: http://www.bensound.com/royalty-free-music"
+            For Online videos (Youtube, Vimeo,...) I prefer credits in the video description.</p>
+    </div>
+    <button class="accordion">Do the Pro Licenses allow me to use your music on several projects?</button>
+    <div class="panel">
+        <p> If you produce your own videos: Yes.
+            If you produce videos for clients then you must buy a license for each client.</p>
+    </div>
+    <button class="accordion">Can I specify a license holder different from my billing name?</button>
+    <div class="panel">
+        <p>Yes, during checkout, in the "Payment Method" tab you can specify the license holder in the "Licensee" input.
+        </p>
+    </div>
+    <button class="accordion">Do I have to credit Bensound.com if I buy a License?</button>
+    <div class="panel">
+        <p> No, credits are optional if you buy a Pro License.</p>
+    </div>
+
+    <br>
+    <br>
+    <hr class="divider-small">
+    <br>
+    <h2>General and Technical</h2>
+    <br>
+            <!-- **---------------------- GENERAL QUESTIONS ACCORDION----------------------** -->
+
+    <hr class="divider-small">
+    <br>
+    <button class="accordion">Can I make a song or a remix with Bensound's music?</button>
+    <div class="panel">
+        <p> NO! Our music is meant to be used for multimedia projects such as videos and web applications. For both the
+            free license and the pro licenses, it is forbidden to make a song, a remix and/or to use our music for music
+            production. You can however adapt the music for your film or video by cutting, fading, editing the length or
+            adding voice over.</p>
+    </div>
+    <button class="accordion">Can you compose original music for my project?</button>
+    <div class="panel">
+        <p>Due to lack of time we usually don't accept to compose original music unless it is a very interesting
+            project.
+
+        </p>
+    </div>
+    <button class="accordion">Do you accept music submission?</button>
+    <div class="panel">
+        <p>Bensound.com is now accepting Artist submission. To apply send us a link to listen to your music. Due to the
+            volume of submission we will get in touch with you only if you are accepted.
+
+        </p>
+    </div>
+    <button class="accordion">How can I pay?</button>
+    <div class="panel">
+        <p> We only accept payments by cards or Paypal.
+
+        </p>
+    </div>
+    <button class="accordion">How will the charge appear on my credit card statement?</button>
+    <div class="panel">
+        <p>If you choose the payment by Card the transaction will appear on your statement as "Bensound Music" or "Bens.
+            Music".
+
+        </p>
+    </div>
+    <button class="accordion">Can I download your music from an ipad or an iphone?</button>
+    <div class="panel">
+        <p> No, you will need to use a computer.
+
+        </p>
+    </div>
+    <br>
+    <br>
+    <hr class="divider-small">
+    <br>
+
+    <!-- Accordion definition for FAqs section - JS (SORRY, FELICE, I COULDN'T RESIST TO USE IT HERE) -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+
+
+
+
+    <!-- **----------------------FOOTER (IDENTICAL FOR ALL PAGES) ----------------------** -->
+    <hr class="divider">
+    <section class="footer-container">
+        <section class="footer">
+            <ul>
+                <a href="Collections.html" class="menu-items">Collections</a>
+                <br>
+                <a href="shop.html" class="menu-items">Shop</a>
+                <br>
+                <a href="Contact.html" class="menu-items">Contact Me</a>
+                <br>
+                <a href="faqs.html" class="menu-items">FAQs</a>
+            </ul>
+            <ul>
+                <a href="/" class="menu-items">Free License</a>
+                <br>
+                <a href="/" class="menu-items">Subscription</a>
+                <br>
+                <a href="/" class="menu-items">Life Time access</a>
+                <br>
+                <a href="/" class="menu-items">YouTube and Facebook claims</a>
+                <br>
+                <a href="/" class="menu-items">Special Projects</a>
+            </ul>
+
+            <ul>
+                <a href="/"><img class="logo" src="/photos/social/fb.png" alt="fb"></a>
+                <a href="/"><img class="logo" src="/photos/social/tw.png" alt="tw"></a>
+                <a href="/"><img class="logo" src="/photos/social/yt.png" alt="yt"></a>
+                <br>
+                Contact me: bensoundmusic@gmail.com
+            </ul>
+        </section>
+
+
+        <!-- <h1> Contact me</h1> -->
+        <section class="contact-form">
+            <div>
+                <form action="">
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+                    <br>
+                    <input type="text" id="email" name="email" placeholder="Your mail..">
+                    <br>
+                    <textarea id="subject" name="subject" placeholder="Write something.." rows="3"></textarea>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d23021.240231959433!2d-79.45907208476565!3d43.84225032882802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x882b2bfccd084731%3A0x6770fd8b2115decd!2sVaughan%2C%20Ontario!3m2!1d43.8463655!2d-79.466748!5e0!3m2!1sen!2sca!4v1606184081668!5m2!1sen!2sca"
+                    width="90%" height="300" padding="10px" frameborder="0" style="border:0;" allowfullscreen=""
+                    aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </section>
+    </section>
+
+    <hr class="divider">
+    <p>Created by: Inna Manova for Graphic Design for Print and Web Composite #2 project</p>
+</body>
