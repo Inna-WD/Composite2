@@ -1,0 +1,2 @@
+[2020-12-3 10:10:29] layer "white-and-pink-logo.png": Duplicate path: white-and-pink-logo.png
+[2020-12-3 10:10:29] layer "white-and-pink-logo.png": Duplicate path: white-and-pink-logo.png
